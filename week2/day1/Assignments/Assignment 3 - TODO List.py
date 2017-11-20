@@ -5,10 +5,7 @@
 # - User should be able to remove the tasks
 # - User should be able to quit the app when "q" is pressed
 #
-#
-#
 # HARD MODE:
-#
 # - User should be able to enter priority of the task
 # - User should be able to sort the tasks based on priority
 
@@ -19,8 +16,10 @@ class TODO(object):
         self.title = title
         self.tasks = []
 
-    def add_task(self, task):
-        self.tasks.append(task)
+    def add_task(self):
+        print('Enter the task you\'d like to add:')
+        task_to_add = raw_input('> ')
+        self.tasks.append(task_to_add)
 
     def view_tasks(self):
         print('Here\'s the list of tasks:')
@@ -30,8 +29,12 @@ class TODO(object):
             print('{0}. {1}\n'.format(counter, task))
             counter += 1
 
-    def remove_task():
-        print('Removing task')
+    def remove_task(self):
+        self.view_tasks()
+        remove_index = raw_input('Enter the task number you want to remove >')
+        if remove_index <= len(self.tasks):
+            del self.tasks[int(remove_index) + -1]
+        print('Deleted task #{}.'.format(remove_index))
 
 todo_list = TODO('Today\'s TODO List')
 
@@ -45,16 +48,11 @@ while True:
     print("-Press 'a' to add a task.\n-Press 'v' to view tasks.\n-Press 'r' to remove a task. \n-Press 'q' to quit.")
     choice = raw_input('> ')
     if choice == 'a':
-        print('Enter the task you\'d like to add')
-        task_to_add = raw_input('> ')
-        todo_list.add_task(task_to_add)
+        todo_list.add_task()
     elif choice == 'v':
         todo_list.view_tasks()
     elif choice == 'r':
-        todo_list.view_tasks()
-        remove_index = raw_input('Enter the task number you want to remove >')
-        del todo_list.tasks[int(remove_index) + -1]
-        print('Deleted task #{}.'.format(remove_index))
+        todo_list.remove_task()
     elif choice == "q":
         print('Quitting the program')
         break

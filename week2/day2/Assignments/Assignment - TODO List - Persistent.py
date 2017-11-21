@@ -19,7 +19,7 @@ class ToDoList(object):
     def remove_task(self):
         task_to_remove = raw_input('Enter type task you want to remove > ')
         with open(filename, 'r') as input:
-            with open(filename, 'wb') as output:
+            with open(filename, 'w') as output:
                 for line in input:
                     if line != task_to_remove + '\n':
                         filename.write(line)

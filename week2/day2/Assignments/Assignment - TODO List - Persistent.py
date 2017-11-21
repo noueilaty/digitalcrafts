@@ -1,53 +1,51 @@
- print("--TODO List App--")
+class ToDoList(object):
+    def __init__(self, title):
+        self.title = title
 
- class TODO(object):
-     def __init__(self, title):
-         self.title = title
-         self.tasks = []
+    def add_task(self):
+        print('Enter the task you\'d like to add:')
+        task_to_add = raw_input('> ')
+        with open('todos.txt', 'a') as file_object:
+            file_object.write(task_to_add)
+            file_object.write('\n')
 
-     def add_task(self):
-         print('Enter the task you\'d like to add:')
-         task_to_add = raw_input('> ')
-         # is_priority = raw_input('Is this task a priortiy? (y/n) > ')
-         # if is_priority == 'y':
-         #     self.tasks.append('! {}'.format(task_to_add))
-         # else:
-         self.tasks.append(task_to_add)
+    def view_tasks(self):
+        print('Here\'s the list of tasks:')
+        with open(filename) as file_object:
+            contents = file_object.read()
+            print(contents)
 
-     def view_tasks(self):
-         print('Here\'s the list of tasks:')
-         print('{}'.format(self.title))
-         counter = 1
-         for task in self.tasks:
-             print('{0}. {1}\n'.format(counter, task))
-             counter += 1
-         print("Note: '!' denotes a priority task")
+    # remove_task is still a work in progress:
+    def remove_task(self):
+        task_to_remove = raw_input('Enter type task you want to remove > ')
+        with open(filename, 'r') as input:
+            with open(filename, 'wb') as output:
+                for line in input:
+                    if line != task_to_remove + '\n':
+                        filename.write(line)
+        print('Deleted task : {}.'.format(task_to_remove))
 
-     def remove_task(self):
-         self.view_tasks()
-         remove_index = raw_input('Enter the task number you want to remove >')
-         del self.tasks[int(remove_index) + -1]
-         print('Deleted task #{}.'.format(remove_index))
+todo_list = ToDoList('Today\'s TODO List')
+filename = 'todos.txt'
 
- todo_list = TODO('Today\'s TODO List')
+while True:
+    try:
+        print('\nWhat would you like TODO?')
 
- while True:
-     try:
-         print('\nWhat would you like TODO?')
+    except:
+        print("Error")
 
-     except:
-         print("Error")
+    print("-Press 'a' to add a task.\n-Press 'v' to view tasks.\n-Press 'r' to remove a task. \n-Press 'q' to quit.")
+    choice = raw_input('> ')
 
-     print("-Press 'a' to add a task.\n-Press 'v' to view tasks.\n-Press 'r' to remove a task. \n-Press 'q' to quit.")
-     choice = raw_input('> ')
-     if choice == 'a':
-         todo_list.add_task()
-     elif choice == 'v':
-         todo_list.view_tasks()
-     elif choice == 'r':
-         todo_list.remove_task()
-     elif choice == "q":
-         print('Quitting the program')
-         break
-     else:
-         print('{} is an invalid command.'.format(choice))
+    if choice == 'a':
+        todo_list.add_task()
+    elif choice == 'v':
+        todo_list.view_tasks()
+    elif choice == 'r':
+        todo_list.remove_task()
+    elif choice == "q":
+        print('Quitting the program')
+        break
+    else:
+        print('{} is an invalid command.'.format(choice))

@@ -13,7 +13,7 @@ def reverseWord(word):
     return ''.join(backwards_word)
 
 
-print("Enter a word to check if it's a palindrome")
+print("Enter a word to check if it is a palindrome")
 user_word = str.lower(raw_input("> "))
 
 

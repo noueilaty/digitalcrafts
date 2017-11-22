@@ -1,0 +1,61 @@
+You have just been hired by University of Houston as a developer. Your first task is to create a pool table management app which will manage the pool tables in University Center Games Room.
+
+Here are the requested features:
+
+- As an admin you should be able to see all the tables (12)
+
+- As an admin each table in the list should show, whether the table is OCCUPIED or NOT OCCUPIED.
+
+- As an admin if the table is OCCUPIED then show the start time of the table, number of minutes played. (Hardmode - If the minutes are > 60 then show them in terms of hours)
+
+- As an admin you can only give out the tables that are NOT OCCUPIED.
+
+- As an admin whenever I close the table it should write an entry in the text file / json file. The file should be named in the following format: (11-22-2017.txt or 11-22-2017.json) keeping track of all the tables.
+
+
+
+HARD MODE - Associate dollar amount for time played on the pool table. $30 per hour. (prorated per minute)
+
+MORE HARD MODE - Write Unit Tests for your application
+
+EXTREMELY HARD MODE: Add the ability to email the final report (file) to an email address.
+
+-----------------------------------------------------------------------
+Welcome to The University of Houston Pool Table Management Application:
+-----------------------------------------------------------------------
+"What would you like to do?":
+    'v' - view all tables including status
+        print a list of all the tables to the terminal window
+            Table #1: VACANT
+            Table #2: OCCUPIED | Start [08:09 PM] | Time Played [38 min]
+            Table #3: VACANT
+            Table #4: VACANT
+            Table #5: OCCUPIED | Start [08:09 PM] | Time Played [1 hr 27 min]
+            [...]
+
+        Loop back to first prompt
+
+    'o' - open table (starts time)
+        shows available tables, prompts user to select one:\
+        "Select a table to open > "
+            Table #1: VACANT
+            Table #3: VACANT
+            Table #4: VACANT
+            [...]
+
+    'c' - close table (ends time, calculates amount owed)
+        Ask user which table they want to close (shows occupied tables):
+        "Select a table number to close > "
+            Table #2: OCCUPIED | Start [08:09 PM] | Time Played [38 min]
+            Table #5: OCCUPIED | Start [08:09 PM] | Time Played [1 hr 27 min]
+
+        user input: 2
+
+        writes an entry in the text/json file:
+            -if a file with the current date already exists, append the entry to that same file.
+            -otherwise, create a new file with the current date as the filename, then record the entry.
+
+    'e' - emails report to admin
+        confirm request to email report to admin
+
+    'q' - quit program

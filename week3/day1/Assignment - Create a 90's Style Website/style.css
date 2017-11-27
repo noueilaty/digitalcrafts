@@ -1,0 +1,16 @@
+body {
+  background-image: url("stonehaven.png");
+}
+
+.body-class {
+  color:black;
+  font-size:18px;
+}
+
+.h2-class {
+  text-align: center;
+}
+
+.p-class {
+  font-size: 10px;
+}

@@ -1,0 +1,36 @@
+
+.photo {
+  width:300px;
+  height:200px;
+}
+
+.vac1 {
+  background-color: blue;
+  color:white;
+  /*
+  margin-right:10px;
+  margin-left:10px;
+  margin-top:10px;
+  margin-bottom: 10px; */
+
+  /* applying margin on all sides */
+  /* top right bottom left */
+  margin:10px 100px 30px 10px;
+}
+
+.vac2 {
+  background-color: red;
+  color:white;
+}
+
+a {
+  background-color:gray;
+  padding:10px;
+  margin:10px;
+  text-decoration: none;
+}
+
+p {
+  font-family: sans-serif;
+  padding:15px;
+}

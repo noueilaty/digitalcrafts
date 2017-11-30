@@ -1,0 +1,40 @@
+a {
+  
+}
+
+.banner {
+  display: flex;
+  font-family: Arial;
+  color: white;
+  background-color: CornFlowerBlue;
+  padding: 25px 25px 25px 25px;
+}
+
+.menu li {
+  list-style: none;
+  display: inline;
+  color: white;
+}
+
+.featured {
+  background-color: lightgrey;
+  padding: 3px 5px 3px 10px;
+  color: DimGray;
+}
+
+.article_title {
+  color: CornFlowerBlue;
+  font-family: Verdana;
+  font-size: 22px;
+}
+
+.comments {
+  background-color: DarkOrange;
+  color: white;
+  font-family: Arial;
+  font-size: 14px;
+}
+
+.content {
+  margin: 70px 20px 10px 20px;
+}

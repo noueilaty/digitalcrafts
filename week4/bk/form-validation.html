@@ -1,0 +1,38 @@
+
+<html>
+<head>
+</head>
+
+<body>
+
+<form id="form1">
+  <fieldset>
+    <legend>Personal Information</legend>
+    <input type="text" pattern="[A-Za-z]{3}" required />
+    <button id="addButton">Add</button>
+  </fieldset>
+</form>
+
+
+</body>
+
+<!-- Put it in separate file  -->
+<script>
+
+let addButton = document.getElementById('addButton')
+addButton.addEventListener('click',function(){
+
+  let form1 = document.getElementById('form1')
+  let isValid = form1.checkValidity()
+
+  console.log(isValid)
+  console.log('button has been clicked')
+
+})
+
+
+
+
+</script>
+
+</html>

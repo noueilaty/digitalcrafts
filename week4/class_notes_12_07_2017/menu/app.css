@@ -1,0 +1,8 @@
+
+.dishes-ul {
+  list-style: none
+}
+
+.dishes-ul li {
+  font-weight: bold;
+}

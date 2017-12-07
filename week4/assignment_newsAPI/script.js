@@ -1,14 +1,16 @@
 for (var i = 0; i < news.articles.length; i++) {
-  console.log(news.articles[i]);
+  console.log(news.articles[i].title);
 
-  
+  newsList = document.getElementById('newsList');
 
-  `<div>
-    <h3 id="title"> <h3>
-    <h4 id="author"> </h4>
-    <h5 id="published"> </h5>
-    <p id="description"> </p>
-    <a id="URL" href=""> </a>
+  let newsListItem = `
+  <div>
+    <img src="${news.articles[i].urlToImage}" alt="${news.articles[i].title}">
+    <h3><a href="${news.articles[i].url}">${news.articles[i].title}</a><h3>
+    <h5>Posted ${news.articles[i].publishedAt} by ${news.articles[i].author}
+    <p>${news.articles[i].description}</p>
+
   </div>`
 
+  newsList.innerHTML += newsListItem;
 }

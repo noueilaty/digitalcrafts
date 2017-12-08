@@ -43,7 +43,7 @@ Amazon generates a dynamic URL for you to reference. You have the option to purc
 
 To delete the website, search for ‘bucket’ from the AWS Console. Then delete the files associated with your website.
 
-**Heroku: ***(5 free apps on included)*
+### **Heroku: ***(5 free apps on included)*
 
 Built on Ruby on Rails
 

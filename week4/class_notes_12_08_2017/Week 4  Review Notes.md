@@ -1,16 +1,12 @@
 **Topics:**
 
- Github README.md file (markdown language)
+*Github README.md file (markdown language)
+*Amazon AWS
+*Heroku Account: Install heroku CLI
+*Git Branches
+*Review
 
- Amazon AWS
-
- Heroku Account: Install heroku CLI
-
- Git Branches
-
- Review
-
- **Quiz!**
+**Quiz!**
 
 ### **Git Branches:**
 

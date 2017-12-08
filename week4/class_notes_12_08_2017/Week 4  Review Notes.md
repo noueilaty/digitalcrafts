@@ -5,8 +5,7 @@
 * Heroku Account: Install heroku CLI  
 * Git Branches  
 * Review  
-
-**Quiz!**
+* **Quiz!**
 
 ### **Git Branches:**
 

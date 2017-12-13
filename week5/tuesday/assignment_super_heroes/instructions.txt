@@ -11,3 +11,10 @@ http://www.omdbapi.com/?i=insertSelectedimdbIDhere&apikey=insertyourkeyhere
 
 Feel free to use your design skills to create an amazing experience.
 * Don't forget to make your website responsive
+
+Title
+Image
+Year
+Rating
+Released
+Director

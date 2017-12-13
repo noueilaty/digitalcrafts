@@ -1,0 +1,105 @@
+Please find the course outline below. There may be some shuffling around of the topics but in general, this is what you can expect to be covered.
+
+If you would like to enroll, you just need to let me know before the start of the elective (12/12 @5:30 PM). You may un-enroll from the elective at any time and we use the same pro-rate model for refunds (we refund the amount left in the elective).
+
+The course runs from 5:30 to 7:30 on:
+
+12/12
+12/14
+12/19
+12/21
+1/4
+1/9
+1/11
+1/16
+1/18
+1/23
+1/25
+1/30
+2/1
+2/6
+
+Computer Science Elective
+
+Day 1 - Introduction
+
+Introduction to class. Why are we here? What will we learn?
+Our Python Environment
+What is an algorithm?
+Bubble Sort
+Interview Exercise
+Day 2 - Sorting
+
+Measuring our algorithms
+Introduction to Big O
+Insertion Sort
+Selection Sort
+Merge Sort
+Interview Exercise
+Day 3 - Recursion
+
+Programming problem review
+Introduction to Recursion
+Recursion Exercises
+Day 4 - Searching
+
+Linear Search
+Binary Search
+Interview Exercise
+Day 5 - How computers really work
+
+Memory Management
+Datatypes in memory
+problems with float
+Time
+Threads and Processes
+Interview Exercise
+Day 6 - Data Structures
+
+Intro to Data Structures
+Arrays + Linked Lists
+Queues
+Stacks
+Interview Exercise
+Day 7 - More Data Structures
+
+Hash Tables
+Trees
+Binary Search Tree
+Interview Exercise
+Day 8 - So many Data Structures
+
+Binary Search Tree, Continued
+Balancing Trees
+B Tree
+Red Black Tree
+Interview Exercise
+Day 9 - Networks
+
+OSI Model
+Networking
+Interview Exercise
+what happens when you go to google.com
+Day 10 - Security and Cryptography
+
+Public Key Encryption
+How SSL works, and the math behind it
+Hashing
+Random Numbers
+Secure Programming
+Interview Exercise
+Day 11 - Regular Expressions
+
+Automata
+Using Regex
+Interview Exercise
+Day 12 - Graphs
+
+Graphs
+Day 13 - Advanced Sorting
+
+Heap Sort
+Quick Sort
+Day 14 - Databases
+
+Database Models

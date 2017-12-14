@@ -1,0 +1,20 @@
+
+Grade: N/A
+View Grade Information. Opens a dialogue
+Create a website to display list of all the flowers. Give user an ability to add a new flower. Once, the new flower is added it should show in the list of all the flowers.
+
+* Make sure it works on mobile devices.
+
+
+
+Flowers API Documentation:
+
+Get all flowers:
+
+https://flowers.vapor.cloud/flowers
+
+Create a new flower:
+
+(https://flowers.vapor.cloud/flower
+
+params: name (string), description (string) 

@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Coffee Orders</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h2>Coffee Order Management System</h2>
+
+    <div>
+      <h4>Create a new order:</h4>
+      <input type="text" id="emailAddressBox" value="john@doe.com">
+      <input type="text" id="coffeeBox" value="Americano">
+      <button id="POSTorder">Submit Order</button>
+    </div>
+
+    <div>
+      <h4>Delete an existing order:</h4>
+      <input type="text" id="emailAddressBox" value="john@doe.com">
+      <button id="DELETEorder">Delete Order</button>
+    </div>
+
+    <div>
+      <h3>Existing Orders:</h3>
+      <ul id="existingOrders"></ul>
+    </div>
+
+
+  </body>
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="script.js"></script>
+
+</html>

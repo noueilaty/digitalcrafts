@@ -32,6 +32,5 @@ let currentTitle = function(movieID) {
     .append($("<li>").html(data.Released))
     .append($("<li>").html(data.Director))
     .appendTo($("#currentTitle"))
-
   })
 }

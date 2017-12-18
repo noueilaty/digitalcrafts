@@ -27,7 +27,7 @@ $("#POSTorder").click(function(){
 })
 
 $("#DELETEorder").click(function(){
-  let emailToDelete = $("#emailAddressBox").val()
+  let emailToDelete = $("#deleteEmailAddressBox").val()
 
   $.ajax({
     url: postURL + emailToDelete,
